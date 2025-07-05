@@ -1,8 +1,14 @@
 import { useState } from 'react'
+import NavBar from './components/NavBar.jsx'
+import Footer from './components/Footer.jsx'
 
 function WorkPage () {
     return (
-        <p>work page</p>
+        <>
+            <NavBar />
+            <p>work page</p>
+            <Footer />
+        </>
     );
 }
 
