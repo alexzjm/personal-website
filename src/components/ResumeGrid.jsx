@@ -29,7 +29,7 @@ function ResumeGrid ({ iconClass, name, desc, focusAreas, targetRoles, lastUpdat
                 <button>Download PDF</button>
             </div>
         </div>
-    )
+    );
 }
 
 export default ResumeGrid;

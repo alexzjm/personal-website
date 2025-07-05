@@ -39,4 +39,4 @@ function ProjectGrid ({ icon, date, category, title, desc, techs, duration, team
     );
 }
 
-export default ProjectGrid
+export default ProjectGrid;

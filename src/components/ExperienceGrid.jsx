@@ -15,7 +15,7 @@ function ExperienceGrid ({ duration, name, company, desc, techs }) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default ExperienceGrid;
