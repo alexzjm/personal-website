@@ -4,8 +4,8 @@ import Footer from './components/Footer.jsx'
 
 function HomePage () {
     return (
-        <>
-            <NavBar />
+        <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+            <NavBar pageId={0}/>
             <div>
                 <h1>Alex Zhang</h1>
                 <div>AI-Enthusiast & Full-stack Developer</div>
@@ -87,7 +87,7 @@ function HomePage () {
             <h1 class="text-3xl font-bold underline">
                 Hello world!
             </h1>
-        </>
+        </div>
     );
 }
 

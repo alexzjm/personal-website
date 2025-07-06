@@ -5,8 +5,8 @@ import Footer from './components/Footer.jsx'
 
 function ResumePage () {
     return (
-        <>
-            <NavBar />
+        <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+            <NavBar pageId={2}/>
             <PageHeader 
                 pageName="Resume"
                 pageTitle="Resume Collections"
@@ -14,7 +14,7 @@ function ResumePage () {
             />
             <p>resume page</p>
             <Footer />
-        </>
+        </div>
     )
 }
 
