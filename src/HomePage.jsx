@@ -1,20 +1,40 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx'
 import Footer from './components/Footer.jsx'
+import pfp from './assets/alexzhang.jpg'
 
 function HomePage () {
     return (
-        <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+        <div className="min-h-screen bg-gray-50 font-sans">
+
+            
             <NavBar pageId={0}/>
-            <div>
-                <h1>Alex Zhang</h1>
-                <div>AI-Enthusiast & Full-stack Developer</div>
-                <p>
-                    I build to learn. I'm drawn to hard problems, clean systems, and tools that 
-                    teach me something new. What matters most is understanding how things work 
-                    and pushing into areas I haven't explored before.
-                </p>
+
+            {/* Hero Section */}
+            <div className="grid grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 className="text-6xl font-bold leading-tight mb-4 text-[#111]">Alex Zhang</h1>
+                    <p className="text-2xl font-medium text-[#666] mb-4">AI-Enthusiast & Full-stack Developer</p>
+                    <p className="text-lg text-[#666] mb-8 leading-relaxed">
+                        I build to learn. I'm drawn to hard problems, clean systems, and tools that 
+                        teach me something new. What matters most is understanding how things work 
+                        and pushing into areas I haven't explored before.
+                    </p>
+                    <div className="flex gap-4 items-center">
+                        <Link to="/work" className="inline-block py-3 px-6 text-sm font-medium uppercase tracking-wide rounded border-2 border-[#111] bg-[#111] text-white cursor-pointer transition duration-300 ease-in-out hover:bg-transparent hover:text-[#111]">
+                            View Work
+                        </Link>
+                        <Link to="/resume" className="inline-block py-3 px-6 text-sm font-medium uppercase tracking-wide rounded border-2 border-[#111] bg-[#111] text-white cursor-pointer transition duration-300 ease-in-out hover:bg-transparent hover:text-[#111]">
+                            View Resume
+                        </Link>
+                    </div>
+                </div>
+                <div>
+                    <img src={pfp} />
+                </div>
             </div>
+            
             <div>
                 <div>
                     <h3>Education</h3>
