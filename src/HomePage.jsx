@@ -76,7 +76,7 @@ function HomePage () {
                 <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-16 items-start">
                     <div>
                         <p className="text-[#666] mb-6 leading-relaxed">
-                            I'm a Computer Engineering student at the University of Toronto with a 3.9 GPA, 
+                            I'm a Computer Engineering student at the University of Toronto, 
                             minoring in AI and Business. I build intelligent web applications 
                             that combine full-stack development with applied machine learning. My work spans 
                             a range of technical areas—from conversational voice agents using Twilio and 
