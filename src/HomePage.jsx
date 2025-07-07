@@ -1,8 +1,35 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx'
+import TechSkillGrid from './components/TechSkillGrid.jsx'
 import Footer from './components/Footer.jsx'
 import pfp from './assets/alexzhang.jpg'
+
+const techStack = [
+    {
+        title: "Programming Languages",
+        techs: ["C", "C++", "Python", "Java", "JavaScript", "TypeScript", "Verilog"]
+    },
+    {
+        title: "Frontend Web Development",
+        techs: ["HTML/CSS", "JavaScript", "TypeScript", "React", "Tailwind", "Bootstrap", "Next", "Figma"]
+    },
+    {
+        title: "Backend Web Development",
+        techs: ["Node.js", "Express.js", "Flask", "Django", "PostgreSQL", "RESTful APIs", "Supabase"]
+    },
+    {
+        title: "Machine Learning & Data Tools",
+        techs: ["PyTorch", "NumPy", "Pandas", "Jupyter Notebooks", "Anaconda Stack"]
+    },
+    {
+        title: "Embedded & Electronic Design",
+        techs: ["KiCad", "LTSpice", "Quartus Prime", "ModelSim", "DESim", "Verilog"]
+    },
+    {
+        title: "Developer Tools & Platforms",
+        techs: ["Git", "Docker", "AWS", "VS Code", "Cursor", "Vercel", "Figma", "Supabase", "OpenAI API", "Google API", "Twilio"]
+    },
+];
 
 function HomePage () {
     return (
@@ -111,6 +138,19 @@ function HomePage () {
                             <h3 className="text-4xl font-bold text-[#111] mb-2">10+</h3>
                             <p className="text-sm text-[#666] uppercase">Technologies</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Tech Skills Section */}
+            <div>
+                <div>
+                    <div>
+                        <h2>Technical Skills</h2>
+                        <p>Technologies and tools I've worked with in the past.</p>
+                    </div>
+                    <div>
+                        {techStack.map(category => <TechSkillGrid title={category.title} techs={category.techs}/>)}
                     </div>
                 </div>
             </div>
