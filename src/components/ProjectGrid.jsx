@@ -1,6 +1,6 @@
 
 
-function ProjectGrid ({ icon, date, category, title, desc, techs, duration, teamSize, repoLink }) {
+function ProjectGrid ({ icon, date, category, title, desc, techs, duration, teamSize, btnLink, btnIcon, btnText }) {
     return (
         <div>
             <div>
@@ -29,9 +29,9 @@ function ProjectGrid ({ icon, date, category, title, desc, techs, duration, team
             </div>
             <div>
                 <div>
-                    <a href={repoLink}>
-                        <i className="fab fa-github"></i>
-                        Source Code
+                    <a href={btnLink}>
+                        <i className={btnIcon}></i>
+                        {btnText}
                     </a>
                 </div>
             </div>

@@ -34,7 +34,6 @@ const techStack = [
 function HomePage () {
     return (
         <div className="min-h-screen bg-white font-sans">
-
             
             <NavBar pageId={0}/>
 
