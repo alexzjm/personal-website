@@ -4,7 +4,7 @@ function NotFound() {
     return (
         <>
             <NavBar />
-            <p>404 not found</p>
+            <p className="text-2xl font-medium text-[#666] mb-4">404 not found</p>
         </>
     );
 }

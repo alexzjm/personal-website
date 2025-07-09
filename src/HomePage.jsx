@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx'
+import SectionHeader from './components/SectionHeader.jsx'
 import TechSkillGrid from './components/TechSkillGrid.jsx'
 import Footer from './components/Footer.jsx'
 import pfp from './assets/alexzhang.jpg'
@@ -95,10 +96,10 @@ function HomePage () {
 
             {/* About Section */}
             <div className="max-w-[1200px] bg-white mx-auto px-4 py-20">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl text-[#111] font-semibold mb-4">About Me</h2>
-                    <p className="text-lg text-[#666] mb-4">Get to know more about my background, skills, and passion for development.</p>
-                </div>
+                <SectionHeader
+                    title="About Me"
+                    subtitle="Get to know more about my background, skills, and passion for development."
+                />
                 <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-16 items-start">
                     <div>
                         <p className="text-[#666] mb-6 leading-relaxed">
@@ -144,10 +145,10 @@ function HomePage () {
             {/* Tech Skills Section */}
             <div>
                 <div className="max-w-[1200px] bg-white mx-auto px-4 py-20">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl text-[#111] font-semibold mb-4">Technical Skills</h2>
-                        <p className="text-lg text-[#666] mb-4">Technologies and tools I've worked with in the past.</p>
-                    </div>
+                    <SectionHeader 
+                        title="Technical Skills"
+                        subtitle="Technologies and tools I've worked with in the past."
+                    />
                     <div className="grid gap-12 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
                         {techStack.map(category => <TechSkillGrid title={category.title} techs={category.techs}/>)}
                     </div>
