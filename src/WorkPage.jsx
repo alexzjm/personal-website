@@ -21,15 +21,15 @@ function WorkPage () {
                         <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">Projects Completed</p>
                     </div>
                     <div className="text-center min-w-[150px]">
-                        <h3 className="text-4xl font-bold text-[#111] mb-2">10+</h3>
+                        <h3 className="text-4xl font-bold text-[#111] mb-2">600+</h3>
                         <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">Hours Committed</p>
                     </div>
                     <div className="text-center min-w-[150px]">
-                        <h3 className="text-4xl font-bold text-[#111] mb-2">10+</h3>
+                        <h3 className="text-4xl font-bold text-[#111] mb-2">200+</h3>
                         <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">Github Contributions</p>
                     </div>
                     <div className="text-center min-w-[150px]">
-                        <h3 className="text-4xl font-bold text-[#111] mb-2">10+</h3>
+                        <h3 className="text-4xl font-bold text-[#111] mb-2">10k+</h3>
                         <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">Lines of Code Written</p>
                     </div>
                 </div>

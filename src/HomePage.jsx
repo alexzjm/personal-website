@@ -143,12 +143,12 @@ function HomePage () {
 
             {/* Tech Skills Section */}
             <div>
-                <div>
-                    <div>
-                        <h2>Technical Skills</h2>
-                        <p>Technologies and tools I've worked with in the past.</p>
+                <div className="max-w-[1200px] bg-white mx-auto px-4 py-20">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl text-[#111] font-semibold mb-4">Technical Skills</h2>
+                        <p className="text-lg text-[#666] mb-4">Technologies and tools I've worked with in the past.</p>
                     </div>
-                    <div>
+                    <div className="grid gap-12 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
                         {techStack.map(category => <TechSkillGrid title={category.title} techs={category.techs}/>)}
                     </div>
                 </div>
