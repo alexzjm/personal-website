@@ -7,21 +7,21 @@ import Footer from "./components/Footer.jsx";
 
 const experiences = [
   {
-    duration: "Mar 2025 – Present",
+    duration: "Mar 2025 - Present",
     name: "Technical Co-founder",
     company: "TrainerIQ · DMZ · Toronto, ON",
     desc: "Built and deployed full-stack MVPs, with fully-routed React frontends, REST APIs backends, incorporating relational databases to validate key product workflows.",
     techs: ["React", "Node.js", "SQL", "Deployment"],
   },
   {
-    duration: "Jan 2025 – Apr 2025",
+    duration: "Jan 2025 - Apr 2025",
     name: "Software Engineering Intern",
     company: "Savi Finance · Toronto, ON",
     desc: "Built an AI-powered PDF parsing pipeline to expand upload flexibility for financial data, enhancing the customer onboarding experience. Developed robust middleware for secure file validation and improved front-end consistency using TypeScript.",
     techs: ["TypeScript", "AI/ML", "PDF Parsing", "React", "Node.js"],
   },
   {
-    duration: "Sep 2024 – Mar 2025",
+    duration: "Sep 2024 - Mar 2025",
     name: "Electrical Engineer (Student Team)",
     company:
       "RSX (Robotics for Space Exploration) · UofT Design Team · Toronto, ON",
@@ -29,7 +29,7 @@ const experiences = [
     techs: ["KiCad", "Arduino", "Soldering", "PCB Design", "Embedded Systems"],
   },
   {
-    duration: "Oct 2024 – Dec 2024",
+    duration: "Oct 2024 - Dec 2024",
     name: "Full-Stack Web Developer",
     company: "UTRA Hacks · Toronto, ON",
     desc: "Collaborated in a team of five to develop the official UTRA Hacks website, contributing to the front-end application form using Next.js and TypeScript. Practiced effective communication with back-end developers and used Git for version control, ensuring smooth collaboration and project tracking.",
@@ -67,7 +67,7 @@ const projects = [
     techs: [
       "C++",
       "OpenStreetMap",
-      "Custom Graphics Engine",
+      "OpenGL",
       "A*",
       "Dijkstra",
       "TSP Algorithms",
@@ -117,7 +117,7 @@ const projects = [
       "Embedded Systems",
     ],
     duration: "2 days",
-    teamSize: "6",
+    teamSize: "6 engineers",
     btnLink: "",
     btnIcon: "fab fa-github",
     btnText: "Source Code",
@@ -157,7 +157,7 @@ const projects = [
       "Git",
     ],
     duration: "2 months",
-    teamSize: "2",
+    teamSize: "2 engineers",
     btnLink: "",
     btnIcon: "fas fa-file-powerpoint",
     btnText: "Presentation",
@@ -258,7 +258,7 @@ function WorkPage() {
             title="Professional Experience"
             subtitle="My professional journey and key milestones in development."
           />
-          <div className="max-w-[600px]">
+          <div className="max-w-[800px] mx-auto">
             {experiences.map((exp) => (
               <ExperienceGrid
                 duration={exp.duration}
@@ -278,7 +278,7 @@ function WorkPage() {
           title="Featured Projects"
           subtitle="A showcase of my development work and technical achievements"
         />
-        <div className="grid grid-cols-[auto-fit,minmax(350px,1fr)] gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           {projects.map(proj => 
             <ProjectGrid 
               icon={proj.icon}
