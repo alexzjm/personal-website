@@ -252,31 +252,33 @@ function WorkPage() {
       </div>
 
       {/* Experience Section */}
-      <div>
-        <SectionHeader
-          title="Professional Experience"
-          subtitle="My professional journey and key milestones in development."
-        />
-        <div className="max-w-[600px]">
-          {experiences.map((exp) => (
-            <ExperienceGrid
-              duration={exp.duration}
-              name={exp.name}
-              company={exp.company}
-              desc={exp.desc}
-              techs={exp.techs}
-            />
-          ))}
+      <div className="bg-[#fafafa]">
+        <div className="max-w-[1200px] mx-auto px-4 py-20">
+          <SectionHeader
+            title="Professional Experience"
+            subtitle="My professional journey and key milestones in development."
+          />
+          <div className="max-w-[600px]">
+            {experiences.map((exp) => (
+              <ExperienceGrid
+                duration={exp.duration}
+                name={exp.name}
+                company={exp.company}
+                desc={exp.desc}
+                techs={exp.techs}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Project Section */}
-      <div>
+      <div className="max-w-[1200px] mx-auto px-4 py-20">
         <SectionHeader 
           title="Featured Projects"
           subtitle="A showcase of my development work and technical achievements"
         />
-        <div>
+        <div className="grid grid-cols-[auto-fit,minmax(350px,1fr)] gap-12">
           {projects.map(proj => 
             <ProjectGrid 
               icon={proj.icon}
