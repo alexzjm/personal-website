@@ -20,7 +20,7 @@ const techStack = [
     },
     {
         title: "Machine Learning & Data Tools",
-        techs: ["PyTorch", "NumPy", "Pandas", "Jupyter Notebooks", "Anaconda Stack"]
+        techs: ["PyTorch", "MatPlotLib", "NumPy", "Pandas", "Jupyter Notebooks", "Anaconda Stack"]
     },
     {
         title: "Embedded & Electronic Design",
@@ -28,7 +28,7 @@ const techStack = [
     },
     {
         title: "Developer Tools & Platforms",
-        techs: ["Git/Github", "Docker", "AWS", "VS Code", "Cursor", "Vercel", "Figma", "Supabase", "OpenAI API", "Google API", "Twilio"]
+        techs: ["Git/Github", "Docker", "AWS", "VS Code", "Cursor", "Vercel", "Figma", "Supabase", "OpenAI API", "Google API"]
     },
 ];
 

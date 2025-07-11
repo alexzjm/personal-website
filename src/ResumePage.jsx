@@ -20,18 +20,18 @@ function ResumePage() {
       <div className="max-w-[1200px] mx-auto px-4 py-20">
         <div className="text-center max-w-[600px] mx-auto">
           <div className="mb-8">
-            <i className="fas fa-file-alt text-6xl text-gray-300 mb-6"></i>
+            <i className="fas fa-file-alt text-6xl text-[#ccc] mb-6"></i>
           </div>
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-2xl font-semibold text-[#111] mb-4">
             Resume Collections Coming Soon
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-6">
+          <p className="text-lg text-[#666] leading-relaxed mb-6">
             I'm currently preparing tailored resume versions for different career paths and opportunities. 
             Each version will highlight relevant skills and experiences for specific roles.
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[#666]">
             In the meantime, feel free to explore my 
-            <a href="/work" className="text-gray-900 hover:underline font-medium"> work experience</a>
+            <a href="/work" className="text-[#111] hover:underline font-medium"> work experience</a>
           </p>
         </div>
       </div>
