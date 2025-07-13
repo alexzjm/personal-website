@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Link } from 'react-router-dom';
 import NavBar from "./components/NavBar.jsx";
 import PageHeader from "./components/PageHeader.jsx";
 import Footer from "./components/Footer.jsx";
@@ -31,7 +31,8 @@ function ResumePage() {
           </p>
           <p className="text-sm text-[#666]">
             In the meantime, feel free to explore my 
-            <a href="/work" className="text-[#111] hover:underline font-medium"> work experience</a>
+            <Link to="/work" className="text-[#111] hover:underline font-medium"> work experience</Link>
+            
           </p>
         </div>
       </div>

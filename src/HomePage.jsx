@@ -28,7 +28,7 @@ const techStack = [
     },
     {
         title: "Developer Tools & Platforms",
-        techs: ["Git/Github", "Docker", "AWS", "VS Code", "Cursor", "Vercel", "Figma", "Supabase", "OpenAI API", "Google API"]
+        techs: ["Git/Github", "VS Code", "Cursor", "Vercel", "Figma", "Supabase", "Google API"]
     },
 ];
 

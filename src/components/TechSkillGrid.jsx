@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function TechSkillGrid ({title, techs}) {
     return (
         <div className="bg-[#fafafa] p-8 rounded-[1rem]">

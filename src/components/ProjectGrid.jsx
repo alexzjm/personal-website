@@ -33,7 +33,7 @@ function ProjectGrid ({ icon, date, category, title, desc, techs, duration, team
                 <div className="text-[#111] no-underline font-medium text-xs uppercase tracking-[0.5px] py-3 px-6 border border-[#e0e0e0] rounded-md transition-all duration-300 ease-in-out text-center w-full flex items-center justify-center gap-2 hover:bg-[#111] hover:text-white">
                     <a href={btnLink}>
                         <i className={btnIcon + " text-base"}></i>
-                        {btnText}
+                        <span className="ml-1">{btnText}</span>
                     </a>
                 </div>
             </div>
