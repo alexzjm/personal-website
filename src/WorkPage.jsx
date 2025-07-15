@@ -180,7 +180,7 @@ const projects = [
     ],
     duration: "3 months",
     teamSize: "2 members",
-    btnLink: "https://github.com/alexzjm/skin-disease-detection",
+    btnLink: "https://github.com/alexzjm/skinguard-ai",
     btnIcon: "fab fa-github",
     btnText: "Source Code",
   },
