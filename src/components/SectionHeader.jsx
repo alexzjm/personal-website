@@ -1,5 +1,3 @@
-
-
 function SectionHeader ({ title, subtitle }) {
     return (
         <div className="text-center mb-16">

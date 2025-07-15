@@ -6,7 +6,6 @@ import NotFound from './NotFound.jsx'
 
 
 function App() {
-
   return (
     <Router>
       <Routes>

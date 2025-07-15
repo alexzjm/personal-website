@@ -1,5 +1,3 @@
-
-
 function ExperienceGrid ({ duration, name, company, desc, techs }) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-4 md:gap-8 mb-12 pb-12 border-b border-gray-200 last:border-b-0">

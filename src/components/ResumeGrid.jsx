@@ -1,5 +1,3 @@
-
-
 function ResumeGrid ({ iconClass, name, desc, focusAreas, targetRoles, lastUpdated, techs, pdfLink }) {
     return (
         <div>

@@ -1,5 +1,3 @@
-
-
 function ProjectGrid ({ icon, date, category, title, desc, techs, duration, teamSize, btnLink, btnIcon, btnText }) {
     return (
         <div className="bg-white rounded-lg overflow-hidden flex flex-col border-[#f0f0f0] border-2">
