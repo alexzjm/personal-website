@@ -54,9 +54,13 @@ const projects = [
     ],
     duration: "1 week",
     teamSize: "Solo",
-    btnLink: "https://github.com/alexzjm/react-csv-toolkit",
-    btnIcon: "fab fa-github",
-    btnText: "Source Code",
+    btnInfos: [
+      {
+        link: "https://github.com/alexzjm/react-csv-toolkit",
+        icon: "fab fa-github",
+        text: "Source Code",
+      }
+    ]
   },
   {
     icon: "fas fa-map-marked-alt",
@@ -77,9 +81,13 @@ const projects = [
     ],
     duration: "4 months",
     teamSize: "3 developers",
-    btnLink: "https://docs.google.com/presentation/d/10uHRt3xVfTFlG5ibUV83jiQUdtKie6ZEYFHBNOpg3UU/edit?usp=sharing",
-    btnIcon: "fas fa-file-powerpoint",
-    btnText: "Presentation",
+    btnInfos: [
+      {
+        link: "https://docs.google.com/presentation/d/10uHRt3xVfTFlG5ibUV83jiQUdtKie6ZEYFHBNOpg3UU/edit?usp=sharing",
+        icon: "fas fa-file-powerpoint",
+        text: "Presentation",
+      }
+    ]
   },
   {
     icon: "fas fa-music",
@@ -98,9 +106,13 @@ const projects = [
     ],
     duration: "2 months",
     teamSize: "2 developers",
-    btnLink: "https://github.com/alexzjm/ece243-sound-synthesizer",
-    btnIcon: "fab fa-github",
-    btnText: "Source Code",
+    btnInfos: [
+      {
+        link: "https://github.com/alexzjm/ece243-sound-synthesizer",
+        icon: "fab fa-github",
+        text: "Source Code",
+      }
+    ]
   },
   {
     icon: "fas fa-robot",
@@ -118,9 +130,13 @@ const projects = [
     ],
     duration: "2 days",
     teamSize: "6 engineers",
-    btnLink: "https://github.com/Ken-2511/UTRA-Hacks-2025",
-    btnIcon: "fab fa-github",
-    btnText: "Source Code",
+    btnInfos: [
+      {
+        link: "https://github.com/Ken-2511/UTRA-Hacks-2025",
+        icon: "fab fa-github",
+        text: "Source Code",
+      }
+    ]
   },
   {
     icon: "fas fa-list-check",
@@ -138,9 +154,13 @@ const projects = [
     ],
     duration: "2 weeks",
     teamSize: "Solo",
-    btnLink: "https://github.com/alexzjm/todolist-webapp",
-    btnIcon: "fab fa-github",
-    btnText: "Source Code",
+    btnInfos: [
+      {
+        link: "https://github.com/alexzjm/todolist-webapp",
+        icon: "fab fa-github",
+        text: "Source Code",
+      }
+    ]
   },
   {
     icon: "fas fa-gamepad",
@@ -158,9 +178,13 @@ const projects = [
     ],
     duration: "2 months",
     teamSize: "2 engineers",
-    btnLink: "https://docs.google.com/presentation/d/1U-1HgBnCo08n5YCZTJ0Hr5Xn87P9HYmPP9DpSTcnZjw/edit?usp=sharing",
-    btnIcon: "fas fa-file-powerpoint",
-    btnText: "Presentation",
+    btnInfos: [
+      {
+        link: "https://docs.google.com/presentation/d/1U-1HgBnCo08n5YCZTJ0Hr5Xn87P9HYmPP9DpSTcnZjw/edit?usp=sharing",
+        icon: "fas fa-file-powerpoint",
+        text: "Presentation",
+      }
+    ]
   },
   {
     icon: "fas fa-stethoscope",
@@ -180,9 +204,13 @@ const projects = [
     ],
     duration: "3 months",
     teamSize: "2 members",
-    btnLink: "https://github.com/alexzjm/skinguard-ai",
-    btnIcon: "fab fa-github",
-    btnText: "Source Code",
+    btnInfos: [
+      {
+        link: "https://github.com/alexzjm/skinguard-ai",
+        icon: "fab fa-github",
+        text: "Source Code",
+      }
+    ]
   },
   {
     icon: "fas fa-envelope-open-text",
@@ -193,9 +221,13 @@ const projects = [
     techs: ["Python", "PyTorch", "RNN", "NLP", "NumPy", "Machine Learning"],
     duration: "2 weeks",
     teamSize: "Solo",
-    btnLink: "https://colab.research.google.com/drive/15lV7RABnc8AgdJlKz07OuO5Hmu3C0f1t?usp=sharing",
-    btnIcon: "fab fa-github",
-    btnText: "Source Code",
+    btnInfos: [
+      {
+        link: "https://colab.research.google.com/drive/15lV7RABnc8AgdJlKz07OuO5Hmu3C0f1t?usp=sharing",
+        icon: "fab fa-github",
+        text: "Source Code",
+      }
+    ]
   },
   {
     icon: "fas fa-eye",
@@ -206,9 +238,13 @@ const projects = [
     techs: ["Python", "PyTorch", "Transfer Learning", "NumPy", "Deep Learning"],
     duration: "3 months",
     teamSize: "4 developers",
-    btnLink: "https://github.com/alexzjm/aps360-diabetic-retinopathy-report",
-    btnIcon: "fab fa-github",
-    btnText: "View Report",
+    btnInfos: [
+      {
+        link: "https://github.com/alexzjm/aps360-diabetic-retinopathy-report",
+        icon: "fab fa-github",
+        text: "View Report",
+      }
+    ]
   },
 ];
 
@@ -263,9 +299,7 @@ function WorkPage() {
               techs={proj.techs}
               duration={proj.duration}
               teamSize={proj.teamSize}
-              btnLink={proj.btnLink}
-              btnIcon={proj.btnIcon}
-              btnText={proj.btnText}
+              btnInfos={proj.btnInfos}
             />
           )}
         </div>
