@@ -223,32 +223,6 @@ function WorkPage() {
           pageTitle="My Work"
           pageDesc="A comprehensive showcase of my development work and professional experience, from web applications to career milestones."
         />
-        <div className="flex justify-between items-center gap-8 mt-8 flex-wrap">
-          <div className="text-center min-w-[150px]">
-            <h3 className="text-4xl font-bold text-[#111] mb-2">10+</h3>
-            <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">
-              Projects Completed
-            </p>
-          </div>
-          <div className="text-center min-w-[150px]">
-            <h3 className="text-4xl font-bold text-[#111] mb-2">600+</h3>
-            <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">
-              Hours Committed
-            </p>
-          </div>
-          <div className="text-center min-w-[150px]">
-            <h3 className="text-4xl font-bold text-[#111] mb-2">200+</h3>
-            <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">
-              Github Contributions
-            </p>
-          </div>
-          <div className="text-center min-w-[150px]">
-            <h3 className="text-4xl font-bold text-[#111] mb-2">10k+</h3>
-            <p className="text-sm text-[#666] uppercase tracking-[0.5px] leading-[1.4]">
-              Lines of Code Written
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* Experience Section */}
