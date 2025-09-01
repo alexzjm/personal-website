@@ -7,6 +7,13 @@ import Footer from "./components/Footer.jsx";
 
 const experiences = [
   {
+    duration: "May 2025 - Aug 2025",
+    name: "AI/Automation Engineering Intern",
+    company: "JuniorKids · Remote",
+    desc: "Collaborated directly with the CEO and led two interns to develop a LangGraph-based AI agent powered by Qwen3 via OpenRouter for autonomous lead sourcing. Automated email outreach and scheduling through Gmail and Google Calendar APIs, and engineered a lightweight CRM with the Google Sheets API to track lead statuses and streamline sales operations.",
+    techs: ["LangGraph", "Python", "Selenium", "BeautifulSoup", "Qwen3", "Google APIs"],
+  },
+  {
     duration: "Mar 2025 - Present",
     name: "Technical Co-founder",
     company: "TrainerIQ · DMZ · Toronto, ON",
