@@ -34,14 +34,26 @@ function ResumeGrid ({ iconClass, name, desc, focusAreas, targetRoles, lastUpdat
                 </div>
             </div>
             <div className="mt-auto pt-6 border-t border-t-[#f0f0f0] p-8">
-                <a 
-                    href={pdfLink} 
-                    download
-                    className="text-[#111] no-underline font-medium text-xs uppercase tracking-[0.5px] py-3 px-6 border border-[#e0e0e0] rounded-md transition-all duration-300 ease-in-out text-center w-full flex items-center justify-center gap-2 hover:bg-[#111] hover:text-white"
-                >
-                    <i className="fas fa-download text-base"></i>
-                    <span>Download PDF</span>
-                </a>
+                <div className="flex flex-col gap-2">
+                    <a 
+                        href={pdfLink} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#111] no-underline font-medium text-xs uppercase tracking-[0.5px] py-3 px-6 border border-[#e0e0e0] rounded-md transition-all duration-300 ease-in-out text-center w-full flex items-center justify-center gap-2 hover:bg-[#111] hover:text-white"
+                    >
+                        <i className="fas fa-eye text-base"></i>
+                        <span>View PDF</span>
+                    </a>
+                    <a 
+                        href={pdfLink} 
+                        download
+                        rel="noopener noreferrer"
+                        className="text-[#111] no-underline font-medium text-xs uppercase tracking-[0.5px] py-3 px-6 border border-[#e0e0e0] rounded-md transition-all duration-300 ease-in-out text-center w-full flex items-center justify-center gap-2 hover:bg-[#111] hover:text-white"
+                    >
+                        <i className="fas fa-download text-base"></i>
+                        <span>Download PDF</span>
+                    </a>
+                </div>
             </div>
         </div>
     );
