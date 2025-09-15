@@ -123,7 +123,7 @@ function HomePage () {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                         <div className="text-center p-6 bg-[#fafafa] rounded">
-                            <h3 className="text-4xl font-bold text-[#111] mb-2">3.9</h3>
+                            <h3 className="text-4xl font-bold text-[#111] mb-2">3.88</h3>
                             <p className="text-sm text-[#666] uppercase">GPA</p>
                         </div>
                         <div className="text-center p-6 bg-[#fafafa] rounded">
