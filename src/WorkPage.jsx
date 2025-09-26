@@ -7,6 +7,13 @@ import Footer from "./components/Footer.jsx";
 
 const experiences = [
   {
+    duration: "Sep 2025 - Present",
+    name: "Driverless Recruit - Deep Learning Perception",
+    company: "UTFR (Formula Racing) · UofT Design Team · Toronto, ON",
+    desc: "Focused on computer vision for autonomous racing, designing and implementing a training pipeline for RF-DETR to detect track cones. Contributed to the perception stack by integrating deep learning models into the team's workflow for reliable real-time object detection.",
+    techs: ["PyTorch", "RF-DETR", "Computer Vision", "Deep Learning", "Model Training"],
+  },
+  {
     duration: "May 2025 - Aug 2025",
     name: "AI/Automation Engineering Intern",
     company: "JuniorKids · Remote",
@@ -14,11 +21,11 @@ const experiences = [
     techs: ["LangGraph", "Python", "Selenium", "BeautifulSoup", "Qwen3", "Google APIs"],
   },
   {
-    duration: "Mar 2025 - Present",
-    name: "Technical Co-founder",
+    duration: "Mar 2025 - Aug 2025",
+    name: "Co-founder / CTO",
     company: "TrainerIQ · DMZ · Toronto, ON",
-    desc: "Built and deployed full-stack MVPs, with fully-routed React frontends, REST APIs backends, incorporating relational databases to validate key product workflows.",
-    techs: ["React", "Node.js", "SQL", "Deployment"],
+    desc: "Directed the technical launch of TrainerIQ's MVP, collaborating with an external team to ship the first production release. Prototyped features with React, Express.js, and Supabase, managed AWS deployment and DNS, and established the company's initial brand identity through UI/UX design and a marketing website.",
+    techs: ["React", "Node.js", "SQL", "Deployment", "AWS", "DNS", "UI/UX Design"],
   },
   {
     duration: "Jan 2025 - Apr 2025",
