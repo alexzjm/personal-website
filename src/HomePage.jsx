@@ -118,7 +118,7 @@ function HomePage () {
                         </p>
                         <p className="text-[#666] mb-6 leading-relaxed">
                             Outside of engineering, I enjoy drawing, producing music, and following European football.
-                            I am a huge supporter of Manchester City and Real Madrid.
+                            I am a fan of Real Madrid.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
