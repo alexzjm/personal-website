@@ -16,11 +16,11 @@ const resumes = [
     techs: [
       "Python", "C++", "JavaScript/TypeScript", "React", "Next.js", "PyTorch", "Docker", "AWS"
     ],
-    pdfLink: "resumes/software_resume_v1_0_0.pdf",
+    pdfLink: "resumes/ml_software_resume_v2_1_4.pdf",
   },
   {
     iconClass: "fas fa-microchip",
-    name: "Embedded Resume",
+    name: "Hardware Resume",
     desc: "Resume focused on embedded systems, FPGA development, robotics hardware, and low-level programming. Includes FPGA projects, PCB design, robotics competition experience, and embedded hackathon builds.",
     focusAreas:
       "Embedded Systems, FPGA Development, Robotics, Low-Level Programming",
@@ -30,7 +30,7 @@ const resumes = [
     techs: [
       "C", "C++", "Verilog", "Python", "FPGA/Arduino", "KiCad", "Quartus"
     ],
-    pdfLink: "resumes/embedded_resume_v1_0_0.pdf",
+    pdfLink: "resumes/hardware_resume_v2_1_4.pdf",
   },
 ];
 
