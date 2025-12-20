@@ -54,17 +54,13 @@ function ResumePage() {
       <div className="max-w-[1200px] bg-white mx-auto px-4 py-20">
         <PageHeader
           pageName="Resume"
-          pageTitle="Resume & Transcripts"
-          pageDesc="Access my professional resumes and academic transcripts. Each document is tailored for different opportunities and showcases relevant qualifications."
+          pageTitle="Resume"
+          pageDesc="Access my professional resumes. Each document is tailored for different opportunities and showcases relevant qualifications."
         />
       </div>
 
       {/* Resume Section */}
       <div className="max-w-[1200px] mx-auto px-4 pb-20">
-        <SectionHeader
-          title="Resume Collections"
-          subtitle="Tailored resumes for different career paths and opportunities. Each version highlights relevant skills and experiences for specific roles."
-        />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {resumes.map((resume) => {
             return (
@@ -80,31 +76,6 @@ function ResumePage() {
               />
             );
           })}
-        </div>
-      </div>
-
-      {/* Transcript Section */}
-      <div className="bg-white">
-        <div className="max-w-[1200px] mx-auto px-4 py-20">
-          <SectionHeader
-            title="Academic Transcript"
-            subtitle="Unofficial academic record showcasing coursework, grades, and academic achievements."
-          />
-          <div className="flex justify-center">
-            <div className="w-full max-w-[500px]">
-              {transcripts.map((transcript) => {
-                return (
-                  <TranscriptGrid
-                    institution={transcript.institution}
-                    degree={transcript.degree}
-                    graduationDate={transcript.graduationDate}
-                    gpa={transcript.gpa}
-                    pdfLink={transcript.pdfLink}
-                  />
-                );
-              })}
-            </div>
-          </div>
         </div>
       </div>
 
