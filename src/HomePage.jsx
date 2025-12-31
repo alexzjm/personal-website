@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
+import Hero3D from './components/Hero3D.jsx'
 import NavBar from './components/NavBar.jsx'
 import SectionHeader from './components/SectionHeader.jsx'
 import TechSkillGrid from './components/TechSkillGrid.jsx'
 import Footer from './components/Footer.jsx'
-import pfp from './assets/alexzhang.jpg'
 
 const techStack = [
     {
@@ -38,6 +38,8 @@ function HomePage () {
             
             <NavBar pageId={0}/>
 
+            <Hero3D />
+
             {/* Hero Section */}
             <div className="max-w-[1200px] bg-white mx-auto px-4 py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -59,8 +61,8 @@ function HomePage () {
                         </div>
                     </div>
                     <div className="flex justify-center">
-                        <div className="w-[300px] h-[300px] rounded-md overflow-hidden bg-[#f5f5f5] flex items-center justify-center">
-                            <img src={pfp} />
+                        <div className="w-[300px] h-[300px] rounded-md overflow-hidden md:flex items-center justify-center hidden">
+                            <Hero3D />
                         </div>
                     </div>
                 </div>
