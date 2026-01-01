@@ -1,6 +1,8 @@
+import Reveal from './Reveal.jsx';
+
 function ProjectGrid ({ icon, date, category, title, desc, techs, duration, teamSize, btnInfos }) {
     return (
-        <div className="bg-white rounded-lg overflow-hidden flex flex-col border-[#f0f0f0] border-2">
+        <Reveal className="bg-white rounded-lg overflow-hidden flex flex-col border-[#f0f0f0] border-2">
             <div className="bg-[#fafafa] p-8 flex items-center gap-6">
                 <div className="w-15 h-15 bg-gray-900 rounded-full flex items-center justify-center text-white text-2xl flex-shrink-0">
                     <i className={icon}></i>
@@ -14,7 +16,7 @@ function ProjectGrid ({ icon, date, category, title, desc, techs, duration, team
                 <h3 className="text-xl text-[#111] font-semibold leading-[1.2] mb-3">{title}</h3>
                 <p className="text-sm text-[#666] mb-6 leading-[1.6]">{desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                    {techs.map(tech => <span className="bg-[#fafafa] text-[#666] px-1 py-2 rounded-[4px] text-xs">{tech}</span>)}
+                    {techs.map((tech, i) => <span key={i} className="bg-[#fafafa] text-[#666] px-1 py-2 rounded-[4px] text-xs">{tech}</span>)}
                 </div>
                 <div>
                     <div>
@@ -28,15 +30,15 @@ function ProjectGrid ({ icon, date, category, title, desc, techs, duration, team
                 </div>
             </div>
             <div className="flex flex-col gap-2 mt-auto pt-6 border-t border-t-[#f0f0f0] p-4">
-                {btnInfos.map(btnInfo => (
-                    <div className="text-[#111] no-underline font-medium text-xs uppercase tracking-[0.5px] py-3 px-6 border border-[#e0e0e0] rounded-md transition-all duration-300 ease-in-out text-center w-full flex items-center justify-center gap-2 hover:bg-[#111] hover:text-white">
+                {btnInfos.map((btnInfo, idx) => (
+                    <div key={idx} className="text-[#111] no-underline font-medium text-xs uppercase tracking-[0.5px] py-3 px-6 border border-[#e0e0e0] rounded-md transition-all duration-300 ease-in-out text-center w-full flex items-center justify-center gap-2 hover:bg-[#111] hover:text-white">
                         <a href={btnInfo.link}>
                         <i className={btnInfo.icon + " text-base"}></i>
                         <span className="ml-1">{btnInfo.text}</span></a>
                     </div>
                 ))}
             </div>
-        </div>
+        </Reveal>
     );
 }
 

@@ -1,6 +1,8 @@
+import Reveal from './Reveal.jsx';
+
 function ExperienceGrid ({ duration, name, company, desc, techs }) {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-4 md:gap-8 mb-12 pb-12 border-b border-gray-200 last:border-b-0">
+        <Reveal className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-4 md:gap-8 mb-12 pb-12 border-b border-gray-200 last:border-b-0">
             <div className="font-semibold text-gray-600 text-sm min-w-[120px]">
                 {duration}
             </div>
@@ -21,7 +23,7 @@ function ExperienceGrid ({ duration, name, company, desc, techs }) {
                     ))}
                 </div>
             </div>
-        </div>
+        </Reveal>
     );
 }
 
